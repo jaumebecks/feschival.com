@@ -46,14 +46,6 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .countdown-box {
-        height: 70px;
-        width: 70px;
-    }
-}
-
 .countdown-value {
     font-size: 24px;
     font-weight: bold;
@@ -66,4 +58,24 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-top: 1em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .counter {
+        padding: 0.5em;
+    }
+    .countdown-label {
+        font-size: 10px;
+        letter-spacing: 0.5px;
+        margin-top: 0.5em;
+    }
+    .countdown-value {
+        font-size: 20px;
+    }
+    .countdown-box {
+        height: 60px;
+        width: 60px;
+        margin: 5px;
+    }
 }
