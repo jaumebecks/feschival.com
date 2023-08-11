@@ -2,29 +2,90 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #fff2d7;
+    overflow: hidden;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('background.jpg') center/cover no-repeat;
+    z-index: -1;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content; /* Set to fit content width */
+    height: fit-content; /* Set to fit content height */
+    background-color: rgba(255, 255, 255, 0.85); /* Transparent background */
+    position: fixed; /* Position as fixed */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Centering */
+    z-index: 1;
+    border-radius: 10px; /* Rounded corners for the rectangle */
+    padding: 20px; /* Add padding for spacing */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow */
 }
 
 .container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-header {
     text-align: center;
-    margin-bottom: 40px;
+    z-index: 1;
 }
 
 .main-header {
     font-size: 36px;
     color: #ff6600;
+    margin-bottom: 10px;
 }
 
 .subheading {
     font-size: 24px;
     color: #ff9900;
+    margin-bottom: 40px;
 }
+
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    position: fixed;
+    z-index: 1;
+}
+
+.countdown-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    margin: 10px; /* Adjust spacing between boxes */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.countdown-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6600;
+}
+
+.countdown-label {
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
 
 .artists {
     /* Add styling for artists list */

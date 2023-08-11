@@ -9,15 +9,39 @@
   </head>
 
   <body>
-    <div class="container">
-      <header>
-        <h1 class="main-header">Feschival</h1>
-        <p class="subheading">2023</p>
-      </header>
-      <section class="artists">
-          <!-- Artists list goes here -->
-      </section>
+    <div class="background">
+      <div class="overlay">
+        <div class="container">
+          <header>
+            <h1 class="main-header">Feschival</h1>
+            <p class="subheading">2023</p>
+          </header>
+          <section class="artists">
+            <!-- Artists list goes here -->
+          </section>
+        </div>
+
+        <div class="counter">
+          <div class="countdown-box">
+            <span class="countdown-value" id="days">--</span>
+            <span class="countdown-label">Días</span>
+          </div>
+          <div class="countdown-box">
+            <span class="countdown-value" id="hours">--</span>
+            <span class="countdown-label">Horas</span>
+          </div>
+          <div class="countdown-box">
+            <span class="countdown-value" id="minutes">--</span>
+            <span class="countdown-label">Min</span>
+          </div>
+          <div class="countdown-box">
+            <span class="countdown-value" id="seconds">--</span>
+            <span class="countdown-label">Seg</span>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="scripts.js"></script>
   </body>
+
 </html>
