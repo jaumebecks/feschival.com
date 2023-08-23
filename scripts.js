@@ -6,8 +6,11 @@ function updateCountdown(targetDate) {
 
     setInterval(() => {
         const currentDate = new Date();
-        const timeDifference = targetDate - currentDate;
+        if (currentDate > targetDate) {
+            return
+        }
 
+        const timeDifference = targetDate - currentDate;
         const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
         const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
