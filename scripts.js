@@ -23,5 +23,5 @@ function updateCountdown(targetDate) {
     }, 1000);
 }
 
-const targetDate = new Date('2023-08-26 12:00:00');
+const targetDate = new Date('2024-09-14 12:00:00');
 updateCountdown(targetDate);
